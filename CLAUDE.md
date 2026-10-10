@@ -39,11 +39,11 @@ Each goal carries its reason; when goals conflict, the reasons decide. They'll e
 
 ## Requirements and docs
 Docs in the repo are the single source of truth for humans and agents. No wikis, no parallel docs. Each rule is stated once, in one doc. If a rule is unclear, rewrite it; don't add a sentence explaining it.
-- `docs/requirements.md` is mine: profile, purpose, character, design links, app-wide rules, feature index. Read it in full before any feature work.
-- `docs/features/<area>.md` is mine: current rules, edge cases and core journey for a feature area. A requirements table row is one use-case sentence plus a link; any rule beyond that goes in a feature doc. App-wide rules (roles, navigation, what's structured data vs. free content) and non-functional requirements stay in `requirements.md`. Read the feature docs your work touches. Current truth only, no history.
+- `docs/requirements.md` is mine: profile, purpose, character, design system link, app-wide rules, feature index. Read it in full before any feature work.
+- `docs/features/<area>.md` is mine: current rules, edge cases, core journey and approved screens for a feature area. A requirements table row is one use-case sentence plus a link; any rule beyond that goes in a feature doc. App-wide rules (roles, navigation, what's structured data vs. free content) and non-functional requirements stay in `requirements.md`. Read the feature docs your work touches. Current truth only, no history.
 - `docs/architecture.md` is mine: tech stack, high-level structure, key decisions and why. Read it before any implementation work.
-- `docs/work/<NNN-slug>.md` is yours: one per work package (features touched, plan, status). Delete it when done; requirement changes must already be in the docs above.
-- Never edit my docs without my approval.
+- `docs/work/<slug>.md` is yours: one per work package, on its branch. It links to the feature rows and docs it covers, never restating them, and holds the plan and the decisions made while building. Delete it in the PR that finishes the work; by merge, requirement changes must already be in the docs above.
+- Never edit my docs without my approval, except the Status column of the features table, which you keep current.
 - Never invent requirements. Propose them with a use case and wait.
 - Flag contradictions or gaps in requirements instead of guessing.
 - Don't just agree with me. Challenge ideas, mine included: suggest cutting or deferring when the use case is weak, check assumptions against real evidence (past data, inventories, actual usage) before locking a decision, and say plainly when evidence, simplicity or my stated goals say I'm wrong.
@@ -52,16 +52,18 @@ Docs in the repo are the single source of truth for humans and agents. No wikis,
 Process exists to serve the goals above. Propose any new rule, step or skill, here or in a project's harness, with the goal it serves; no goal, no process.
 
 Say which mode you're using up front; I can override.
-- New feature or requirement change: grill → design (if it has UI) → plan → implement → review (`/grill`, `/design-ui`, `/plan-change`, `/review-change`).
-- Refactor or bug: plan → implement → review. UI changes still get designed first.
+- New feature or requirement change:
+  1. `/grill`: I answer questions and approve the docs change.
+  2. `/design-ui` if it has UI: I give direction and approve the screens.
+  3. `/implement`: plans, builds, tests and reviews in one pass, ending in a PR per work package. I'm pulled in only when something needs me.
+  4. I spot-check the PR, try it and merge.
+- Refactor or bug: `/implement`. UI changes still get designed first.
 - Trivial fix: just do it, and say in one line what changed.
 
 Design means screens mocked in Claude Design, mobile first, and approved by me before implementation. Direction comes from me; propose alternatives only when they clearly help the problem, labeled as proposals. Code matches the approved design; any deviation comes back to me.
 
-At these checkpoints, ask whether I want an adversarial red-team review (fresh-context agents trying to break the work, not just check it). Never run one unasked:
-- a plan for large or risky work (auth, data model, payments, rebuilds, anything public-facing)
+A red-team review is fresh-context agents trying to break the work, not just check it. Always run one on a plan for large or risky work (auth, data model, payments, rebuilds, anything public-facing). At these checkpoints, ask whether I want one; never run one unasked:
 - a requirements or architecture change is settled
-- a work package is ready to merge
 - before a demo, pitch or release
 
 When a project moves to a new phase (requirements → design → implementation → live), remind me to re-read the requirements and these standards, to confirm they still match my thinking.
