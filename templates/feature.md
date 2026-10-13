@@ -1,6 +1,7 @@
 # <Feature area>
 
 **Features:** <the requirements table rows this doc covers>
+**Screens:** <Claude Design links for the approved screens, or delete if no UI>
 
 ## Core journey
 <The steps, if this area has a core journey. Otherwise delete this section.>

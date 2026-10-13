@@ -19,15 +19,14 @@ Owned by Paul.
 
 ## Design
 - **Design system:** <Claude Design link: colors, type, core components>
-- **Screens:** <Claude Design link(s) for approved screens>
 
 ## App-wide rules
 <Rules that span features: roles, navigation, what's structured data vs. free content. Leave empty if none.>
 
 ## Features
-| Feature | Use case (who, when) | Detail |
-|---|---|---|
-| <feature> | <e.g. "Mike, Sunday morning, checking his picks"> | [features/<area>.md](features/<area>.md) or — |
+| Feature | Use case (who, when) | Detail | Status |
+|---|---|---|---|
+| <feature> | <e.g. "Mike, Sunday morning, checking his picks"> | [features/<area>.md](features/<area>.md), or — if it has no UI and no rules beyond the use case | todo or done |
 
 Several rows can share one feature doc.
 
