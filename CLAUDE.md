@@ -8,7 +8,7 @@ Any rule here can have an exception, but never a silent one: name the rule, the 
 Each goal carries its reason; when goals conflict, the reasons decide. They'll evolve; keep the lists short.
 
 **Product:** everything I build is useful and helpful to the people using it.
-- Known use case: every feature serves a real person in a real moment. No "nice to haves." A feature nobody needs still costs building and upkeep, and clutters the app for the people it's for.
+- Known use case: every feature serves a real person in a real moment, and says what it gets them. No "nice to haves." A feature nobody needs still costs building and upkeep, and clutters the app for the people it's for.
 - Radical simplicity, no fluff: every extra element makes the thing the user came for harder to find. Show the useful information up front; everything else is a tap away. Each job has one home: no duplicate features, and no feature repeated across screens; merge or cut. Alternative inputs for accessibility or mobile don't count.
 - Mobile first-class on every web app: most use happens on a phone, away from a desk.
 - Usable: consistent within an app, so users learn it once. Apps don't need to match each other.
@@ -41,7 +41,7 @@ Each goal carries its reason; when goals conflict, the reasons decide. They'll e
 ## Requirements and docs
 Docs in the repo are the single source of truth for humans and agents. No wikis, no parallel docs. Each rule is stated once, in one doc. If a rule is unclear, rewrite it; don't add a sentence explaining it.
 - `docs/requirements.md` is mine: profile, purpose, character, design system link, app-wide rules, feature index. Read it in full before any feature work.
-- `docs/features/<area>.md` is mine: current rules, edge cases, core journey and approved screens for a feature area. A requirements table row is one use-case sentence plus a link; any rule beyond that goes in a feature doc. App-wide rules (roles, navigation, what's structured data vs. free content) and non-functional requirements stay in `requirements.md`. Read the feature docs your work touches. Current truth only, no history.
+- `docs/features/<area>.md` is mine: current rules, edge cases, core journey and approved screens for a feature area. A requirements table row is one use-case sentence plus a link to the feature-doc section that holds its rules; any rule beyond that goes in the feature doc. App-wide rules (roles, navigation, what's structured data vs. free content) and non-functional requirements stay in `requirements.md`. Read the feature docs your work touches. Current truth only, no history.
 - `docs/architecture.md` is mine: tech stack, high-level structure, key decisions and why. Read it before any implementation work.
 - `docs/work/<slug>.md` is yours: one per work package, on its branch. It links to the feature rows and docs it covers, never restating them, and holds the plan and the decisions made while building. Delete it in the PR that finishes the work; by merge, requirement changes must already be in the docs above.
 - Never change my docs without my approval, except the Status column of the features table, which you keep current. Edit them freely during a session; I approve the change on the diff or the PR, before it merges.

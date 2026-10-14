@@ -7,7 +7,7 @@
 <The steps, if this area has a core journey. Otherwise delete this section.>
 
 ## Rules
-<Business rules, stated as current truth.>
+<Business rules, stated as current truth. Each requirements row links to the `###` section holding its rules (closely related rows may share one); rules many rows share go in a section of their own.>
 
 ## Edge cases
 <Only the ones that change behavior.>
