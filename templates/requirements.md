@@ -26,7 +26,7 @@ Owned by Paul.
 ## Features
 | Feature | Use case (who, when, and what it gets them) | Detail | Status |
 |---|---|---|---|
-| <feature> | <e.g. "Mike, Sunday morning, checking his picks, so he can fix one before kickoff locks it"> | [features/<area>.md](features/<area>.md), or — if it has no UI and no rules beyond the use case | todo or done |
+| <feature> | <e.g. "Mike, Sunday morning, checking his picks, so he can fix one before kickoff locks it"> | [features/<area>.md#<section>](features/<area>.md#<section>), or — if it has no UI and no rules beyond the use case | todo or done |
 
 Several rows can share one feature doc.
 
