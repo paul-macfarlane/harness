@@ -8,7 +8,7 @@ Any rule here can have an exception, but never a silent one: name the rule, the 
 Each goal carries its reason; when goals conflict, the reasons decide. They'll evolve; keep the lists short.
 
 **Product:** everything I build is useful and helpful to the people using it.
-- Known use case: every feature serves a real person in a real moment. No "nice to haves." A feature nobody needs still costs building and upkeep, and clutters the app for the people it's for.
+- Known use case: every feature serves a real person in a real moment, and says what it gets them. No "nice to haves." A feature nobody needs still costs building and upkeep, and clutters the app for the people it's for.
 - Radical simplicity, no fluff: every extra element makes the thing the user came for harder to find. Show the useful information up front; everything else is a tap away. Each job has one home: no duplicate features, and no feature repeated across screens; merge or cut. Alternative inputs for accessibility or mobile don't count.
 - Mobile first-class on every web app: most use happens on a phone, away from a desk.
 - Usable: consistent within an app, so users learn it once. Apps don't need to match each other.

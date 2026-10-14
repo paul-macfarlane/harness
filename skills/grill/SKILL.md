@@ -7,7 +7,7 @@ Grill Paul about the proposal until the requirement is clear, justified and mini
 
 1. Read `docs/requirements.md`, the feature docs the proposal touches, and the global standards.
 2. Ask one question at a time, each with your recommended answer. Ask with the AskUserQuestion choice card, recommended option first and labelled "(Recommended)"; give evidence or context in a short message before it. Plain text only for open questions a card can't hold. Cover:
-   - **Use case:** who uses this, and when? If the answer is vague, push for a real person and moment, or suggest cutting it.
+   - **Use case:** who uses this, when, and what does it get them? If the answer is vague, push for a real person and moment, or suggest cutting it.
    - **Simplicity:** what's the smallest version that solves the use case? What can be deferred?
    - **Fit:** does it contradict or overlap an existing requirement or feature? Is it consistent with the app's character?
    - **Profile:** does it change the project's profile or expected scale?
