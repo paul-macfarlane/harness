@@ -1,9 +1,6 @@
 {
   "permissions": {
     "ask": [
-      "Edit(/docs/requirements.md)",
-      "Edit(/docs/architecture.md)",
-      "Edit(/docs/features/**)",
       "Bash(npm install *)",
       "Bash(npm i *)",
       "Bash(pnpm add *)",

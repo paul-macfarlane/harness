@@ -5,7 +5,7 @@ Owned by Paul.
 ## Profile
 - **Profile:** one of prototype | product, small group (or just me) | public/commercial
 - **Expected scale:** <rough users and usage, e.g. "~20 people, a few times a week">
-- **Exceptions to the standards:** <each rule excepted, why, and the goal it serves, or "none">
+- **Exceptions to the standards** (Paul's engineering standards, from the [harness](https://github.com/paul-macfarlane/harness)): <each rule excepted, why, and the goal it serves, or "none">
 - **Context that shapes priorities:** <optional: only facts that change what gets built or when, e.g. next release, a demo, a deadline. Remove each once it's past.>
 
 ## Purpose
